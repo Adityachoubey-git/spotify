@@ -49,7 +49,7 @@ function convertSecondsToTime(seconds) {
 
 async function getSongs(folder) {
 currFolder = folder;
-  let a = await fetch(`/spotify/${folder}/`)
+  let a = await fetch(`/${folder}/`)
   let response = await a.text();
   
   let div = document.createElement("div");
@@ -97,7 +97,7 @@ return songs;
 
 
 async function displayAlbums() {
-  let a = await fetch("/spotify/songs/")
+  let a = await fetch("/songs/")
 let response = await a.text();
 let div = document.createElement("div");
 div.innerHTML = response;
