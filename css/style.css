@@ -497,7 +497,6 @@ width:calc(100vw - 35px);
   .bucket{
     display: none;
   }
-
 }
 @media (max-width:500px){
   .card{
